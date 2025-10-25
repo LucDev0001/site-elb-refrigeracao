@@ -1,0 +1,43 @@
+/* Define a fonte Inter como padrão */
+body {
+  font-family: "Inter", sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* Animação do letreiro de marcas */
+.marquee-content {
+  display: flex;
+  width: 200%; /* O dobro da largura para o loop */
+  animation: marquee 35s linear infinite;
+}
+
+.marquee-item {
+  flex-shrink: 0;
+  width: 10%; /* Ajuste para caber 10 logos visíveis (100% / 10) */
+  padding: 0 1.5rem; /* 24px */
+}
+
+.marquee-content:hover {
+  animation-play-state: paused;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%); /* Move 50% para um loop perfeito */
+  }
+}
+
+/* ===== NOVOS ESTILOS: Cookie Banner ===== */
+#cookie-banner {
+  /* A classe 'show' removerá a translação e o tornará visível */
+  /* O 'transform' inicial está sendo aplicado via Tailwind ('translate-y-full') */
+  transition: transform 0.5s ease-in-out;
+}
+
+#cookie-banner.show {
+  /* Anula o 'translate-y-full' do Tailwind para mostrar o banner */
+  transform: translateY(0) !important;
+}

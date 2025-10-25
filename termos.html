@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Termos de Uso - Elb Refrigeração</title>
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Animate on Scroll (AOS) CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <!-- Google Fonts - Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Nosso CSS Customizado -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="bg-white text-gray-800 antialiased">
+    <!-- ===== Header / Navegação (Links atualizados para index.html) ===== -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+      <nav
+        class="container mx-auto px-6 py-4 flex justify-between items-center"
+      >
+        <!-- Logo -->
+        <a href="index.html" class="text-3xl font-extrabold text-blue-600">
+          Elb Refrigeração
+        </a>
+
+        <!-- Links Desktop -->
+        <div class="hidden md:flex items-center space-x-8">
+          <a
+            href="index.html#inicio"
+            class="text-gray-600 hover:text-blue-600 transition-colors"
+            >Início</a
+          >
+          <a
+            href="index.html#servicos"
+            class="text-gray-600 hover:text-blue-600 transition-colors"
+            >Serviços</a
+          >
+          <a
+            href="index.html#diferenciais"
+            class="text-gray-600 hover:text-blue-600 transition-colors"
+            >Diferenciais</a
+          >
+          <a
+            href="index.html#galeria"
+            class="text-gray-600 hover:text-blue-600 transition-colors"
+            >Galeria</a
+          >
+          <a
+            href="index.html#marcas"
+            class="text-gray-600 hover:text-blue-600 transition-colors"
+            >Marcas</a
+          >
+          <a
+            href="index.html#contato"
+            class="text-gray-600 hover:text-blue-600 transition-colors"
+            >Contato</a
+          >
+          <a
+            href="index.html#contato"
+            class="bg-blue-600 text-white px-5 py-2 rounded-full font-semibold hover:bg-blue-700 shadow-lg hover:shadow-xl transform hover:scale-105 transition-all"
+          >
+            Solicitar Orçamento
+          </a>
+        </div>
+
+        <!-- Botão Mobile -->
+        <button
+          id="menu-btn"
+          class="md:hidden text-gray-700 focus:outline-none"
+        >
+          <svg
+            class="w-7 h-7"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+            />
+          </svg>
+        </button>
+      </nav>
+
+      <!-- Menu Mobile -->
+      <div id="mobile-menu" class="hidden md:hidden bg-white shadow-lg">
+        <a
+          href="index.html#inicio"
+          class="block px-6 py-3 text-gray-600 hover:bg-blue-50"
+          >Início</a
+        >
+        <a
+          href="index.html#servicos"
+          class="block px-6 py-3 text-gray-600 hover:bg-blue-50"
+          >Serviços</a
+        >
+        <a
+          href="index.html#diferenciais"
+          class="block px-6 py-3 text-gray-600 hover:bg-blue-50"
+          >Diferenciais</a
+        >
+        <a
+          href="index.html#galeria"
+          class="block px-6 py-3 text-gray-600 hover:bg-blue-50"
+          >Galeria</a
+        >
+        <a
+          href="index.html#marcas"
+          class="block px-6 py-3 text-gray-600 hover:bg-blue-50"
+          >Marcas</a
+        >
+        <a
+          href="index.html#contato"
+          class="block px-6 py-3 text-gray-600 hover:bg-blue-50"
+          >Contato</a
+        >
+        <a
+          href="index.html#contato"
+          class="block px-6 py-4 text-center bg-blue-600 text-white font-semibold m-4 rounded-full hover:bg-blue-700"
+        >
+          Solicitar Orçamento
+        </a>
+      </div>
+    </header>
+
+    <main>
+      <!-- ===== Seção de Conteúdo Legal ===== -->
+      <section class="py-24 bg-gray-50">
+        <div class="container mx-auto px-6">
+          <div
+            class="max-w-4xl mx-auto bg-white p-8 md:p-12 rounded-lg shadow-xl"
+          >
+            <h1
+              class="text-3xl md:text-4xl font-bold text-gray-900 mb-10 text-center"
+            >
+              Termos e Condições de Uso
+            </h1>
+
+            <div class="text-gray-700 space-y-6 leading-relaxed">
+              <p><strong>Última atualização:</strong> 25 de outubro de 2025</p>
+
+              <p>
+                Bem-vindo ao site da Elb Refrigeração! Ao aceder e utilizar o
+                nosso site, você ("Utilizador") concorda em cumprir e aceitar os
+                seguintes termos e condições de uso. Por favor, leia-os
+                atentamente.
+              </p>
+
+              <h2 class="text-2xl font-semibold text-gray-800 pt-4">
+                1. Objeto
+              </h2>
+              <p>
+                Este site tem como objetivo fornecer informações sobre os
+                serviços de instalação e manutenção de refrigeração prestados
+                pela Elb Refrigeração, bem como facilitar o contacto para
+                solicitação de orçamentos através do nosso formulário de
+                WhatsApp.
+              </p>
+
+              <h2 class="text-2xl font-semibold text-gray-800 pt-4">
+                2. Aceitação dos Termos
+              </h2>
+              <p>
+                Ao navegar neste site, o Utilizador declara ter lido,
+                compreendido e aceite estes Termos de Uso. Se não concordar com
+                qualquer parte destes termos, não deverá utilizar o site.
+              </p>
+
+              <h2 class="text-2xl font-semibold text-gray-800 pt-4">
+                3. Acesso e Utilização
+              </h2>
+              <p>O Utilizador compromete-se a:</p>
+              <ul class="list-disc list-inside space-y-2 pl-4">
+                <li>
+                  Fornecer informações verdadeiras e exatas ao preencher o
+                  formulário de contacto.
+                </li>
+                <li>
+                  Não utilizar o site para fins ilegais, fraudulentos ou que
+                  violem os direitos de terceiros.
+                </li>
+                <li>
+                  Não tentar aceder a áreas restritas do site ou interferir no
+                  seu funcionamento.
+                </li>
+              </ul>
+
+              <h2 class="text-2xl font-semibold text-gray-800 pt-4">
+                4. Propriedade Intelectual
+              </h2>
+              <p>
+                Todo o conteúdo presente neste site, incluindo, mas não se
+                limitando a, textos, logótipos, imagens, design e software, é
+                propriedade da Elb Refrigeração ou dos seus parceiros (como as
+                marcas dos fabricantes) e é protegido por leis de direitos de
+                autor.
+              </p>
+              <p>
+                A reprodução, distribuição ou modificação de qualquer conteúdo
+                sem autorização expressa é proibida.
+              </p>
+
+              <h2 class="text-2xl font-semibold text-gray-800 pt-4">
+                5. Limitação de Responsabilidade
+              </h2>
+              <p>
+                A Elb Refrigeração esforça-se por manter as informações do site
+                precisas e atualizadas. No entanto, não podemos garantir que o
+                site esteja livre de erros, interrupções ou que as informações
+                sejam sempre completas.
+              </p>
+              <p>Não nos responsabilizamos por:</p>
+              <ul class="list-disc list-inside space-y-2 pl-4">
+                <li>
+                  Quaisquer danos diretos ou indiretos resultantes do uso ou
+                  incapacidade de uso do site.
+                </li>
+                <li>
+                  Decisões tomadas pelo Utilizador com base nas informações aqui
+                  contidas.
+                </li>
+                <li>
+                  Links para sites de terceiros (incluindo o link do
+                  desenvolvedor no rodapé).
+                </li>
+              </ul>
+
+              <h2 class="text-2xl font-semibold text-gray-800 pt-4">
+                6. Política de Privacidade e Cookies
+              </h2>
+              <p>
+                O uso deste site também é regido pela nossa
+                <a href="privacidade.html" class="text-blue-600 hover:underline"
+                  >Política de Privacidade</a
+                >, que descreve como recolhemos e tratamos os seus dados
+                pessoais e o uso de cookies.
+              </p>
+
+              <h2 class="text-2xl font-semibold text-gray-800 pt-4">
+                7. Modificações dos Termos
+              </h2>
+              <p>
+                Reservamo-nos o direito de modificar estes Termos de Uso a
+                qualquer momento, sem aviso prévio. A versão mais recente estará
+                sempre disponível nesta página.
+              </p>
+
+              <h2 class="text-2xl font-semibold text-gray-800 pt-4">
+                8. Legislação Aplicável
+              </h2>
+              <p>
+                Estes termos serão regidos e interpretados de acordo com as leis
+                da República Federativa do Brasil, incluindo a Lei Geral de
+                Proteção de Dados (LGPD).
+              </p>
+
+              <h2 class="text-2xl font-semibold text-gray-800 pt-4">
+                9. Contacto
+              </h2>
+              <p>
+                Se tiver qualquer dúvida sobre estes Termos de Uso, entre em
+                contacto connosco através do nosso formulário principal.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ===== Rodapé ===== -->
+    <footer class="footer bg-gray-800 text-gray-400 py-10">
+      <div class="container text-center mx-auto px-6">
+        <div
+          class="flex justify-center items-center space-x-6 mb-6 text-gray-300"
+        >
+          <div class="flex items-center">
+            <svg
+              class="w-6 h-6 mr-2"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+              />
+            </svg>
+            <span>Ambiente Seguro</span>
+          </div>
+          <div class="flex items-center">
+            <svg
+              class="w-6 h-6 mr-2"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M16.5 10.5V6.75a4.5 4.5 0 10-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 002.25-2.25v-6.75a2.25 2.25 0 00-2.25-2.25H6.75a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25z"
+              />
+            </svg>
+            <span>Dados Protegidos</span>
+          </div>
+        </div>
+
+        <p class="mb-2">
+          &copy; <span id="footer-year">2025</span>
+          Elb Refrigeração . Todos os direitos reservados.
+        </p>
+        <p class="mb-2 footer-links">
+          <a href="termos.html" class="hover:text-white transition-colors"
+            >Termos de Uso</a
+          >
+          <span>&middot;</span>
+          <a href="privacidade.html" class="hover:text-white transition-colors"
+            >Política de Privacidade</a
+          >
+        </p>
+        <p class="mb-0">
+          Desenvolvido por
+          <a
+            href="https://lucianodevfrontend.netlify.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="text-blue-400 hover:text-blue-300 transition-colors"
+            >Santos Codes</a
+          >
+        </p>
+      </div>
+    </footer>
+
+    <!-- ===== Cookie Banner ===== -->
+    <div
+      id="cookie-banner"
+      class="fixed bottom-4 left-4 right-4 md:bottom-6 md:left-6 md:right-auto bg-gray-900 text-white p-5 rounded-lg shadow-2xl z-50 transform translate-y-full max-w-md"
+    >
+      <div class="flex flex-col md:flex-row items-start md:items-center">
+        <div class="flex-grow mb-3 md:mb-0 md:mr-4">
+          <h4 class="font-semibold">Uso de Cookies</h4>
+          <p class="text-sm text-gray-300">
+            Este site utiliza cookies para garantir que você obtenha a melhor
+            experiência.
+            <a
+              href="privacidade.html"
+              class="text-blue-400 underline hover:text-blue-300"
+              >Saiba mais</a
+            >.
+          </p>
+        </div>
+        <button
+          id="accept-cookies"
+          class="bg-blue-600 text-white px-5 py-2 rounded-full font-semibold hover:bg-blue-700 transition-colors flex-shrink-0 w-full md:w-auto"
+        >
+          Aceitar
+        </button>
+      </div>
+    </div>
+
+    <!-- Animate on Scroll (AOS) JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Nosso JavaScript Customizado -->
+    <script src="script.js"></script>
+  </body>
+</html>
