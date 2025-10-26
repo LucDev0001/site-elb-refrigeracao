@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
       // --- IMPORTANTE: Substitua pelo seu número de WhatsApp ---
       // Formato: 55 (Código do País) + XX (DDD) + 9XXXXYYYY (Número)
-      const waNumber = "5521974736469";
+      const waNumber = "5521974736469"; // <-- TROCAR ESTE NÚMERO
 
       // Coletar dados do formulário
       const nome = document.getElementById("nome").value;
@@ -62,7 +62,7 @@ ${mensagem}
     });
   }
 
-  // 5. NOVO: Lógica do Cookie Banner
+  // 5. Lógica do Cookie Banner
   const banner = document.getElementById("cookie-banner");
   const acceptBtn = document.getElementById("accept-cookies");
 
@@ -70,7 +70,6 @@ ${mensagem}
     // Verifica se o cookie já foi aceito
     if (localStorage.getItem("cookie_consent") !== "true") {
       // Não aceito, mostra o banner
-      // A classe 'show' (definida no style.css) anula o 'translate-y-full'
       setTimeout(() => {
         banner.classList.add("show");
       }, 500); // Dá um pequeno delay para aparecer
@@ -80,6 +79,20 @@ ${mensagem}
     acceptBtn.addEventListener("click", () => {
       localStorage.setItem("cookie_consent", "true");
       banner.classList.remove("show");
+    });
+  }
+
+  // 6. NOVO: Registro do Service Worker (PWA)
+  if ("serviceWorker" in navigator) {
+    window.addEventListener("load", () => {
+      navigator.serviceWorker
+        .register("/sw.js")
+        .then((registration) => {
+          console.log("Service Worker registrado com sucesso:", registration);
+        })
+        .catch((error) => {
+          console.log("Falha ao registrar Service Worker:", error);
+        });
     });
   }
 });

@@ -6,17 +6,17 @@
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 
 <url>
-  <loc>https://elb-refrigeracao.netlify.app/</loc>
+  <loc>https://elbrefrigeracao.netlify.app/</loc>
   <lastmod>2025-10-25</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
-  <loc>https://elb-refrigeracao.netlify.app/termos.html</loc>
+  <loc>https://elbrefrigeracao.netlify.app//termos.html</loc>
   <lastmod>2025-10-25</lastmod>
   <priority>0.50</priority>
 </url>
 <url>
-  <loc>https://elb-refrigeracao.netlify.app/privacidade.html</loc>
+  <loc>https://elbrefrigeracao.netlify.app//privacidade.html</loc>
   <lastmod>2025-10-25</lastmod>
   <priority>0.50</priority>
 </url>
