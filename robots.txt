@@ -1,0 +1,8 @@
+Permite todos os robôs (como o do Google)
+
+User-agent: *
+Allow: /
+
+Informa ao robô onde está o mapa do site
+
+Sitemap: https://www.google.com/search?q=https://elb-refrigeracao.netlify.app/sitemap.xml
